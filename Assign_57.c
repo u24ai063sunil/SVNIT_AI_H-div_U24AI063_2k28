@@ -19,7 +19,7 @@ int main()
     max1=arr[0];
     for(int i=0;i<n;i++)
     {
-        if(arr[i]>max1)
+        if(arr[i]>=max1)
         {
             temp=max1;
             max1=arr[i];
@@ -27,7 +27,7 @@ int main()
         }
         if(arr[i]<max1)
         {
-            if(arr[i]>max2)
+            if(arr[i]>=max2)
             {
                 max2=arr[i];
             }
