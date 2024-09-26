@@ -1,14 +1,31 @@
-// C program to print a pattern of *.
+// C program to draw a pattern.
 #include <stdio.h>
+
 int main() 
 {
-    for(int i=1;i<=5;i++)
+    for(int i=1;i<=4;i++)
     {
-        for(int j=1;j<=i;j++)
+        for(int j=4;j>=1;j--)
         {
-            printf("*");
+            if(j>i)
+            {
+                printf(" ");
+            }
+            else
+            {
+                for(int u=1;u<=i;u++)
+                {
+                    printf("*");
+                }
+                for(int t=i-1;t>=1;t--)
+                {
+                    printf("*");
+                }
+                break;
+            }
         }
-            printf("\n");
+        printf("\n");
     }
+
     return 0;
 }
