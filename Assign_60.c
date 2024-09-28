@@ -1,4 +1,4 @@
-// C program to sort (selection sort) the array.
+// C program to sort (bubble sort) the array.
 #include <stdio.h>
 int main() 
 {
