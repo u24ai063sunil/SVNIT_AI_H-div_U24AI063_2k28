@@ -18,7 +18,7 @@ int main()
     }
     else
     {
-        printf("the number %d is not armstrong.",N);
+        printf("the number %d is not palindrome.",N);
     }
     return 0;
 }
