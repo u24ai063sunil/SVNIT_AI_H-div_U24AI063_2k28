@@ -1,4 +1,4 @@
-// C program to find whether a number is  or not.
+// C program to find whether a number is palindrome or not.
 #include <stdio.h>
 int main() 
 {
