@@ -9,8 +9,8 @@
 int main()
 {
     int N,T,num,q,divi_posi=0;//N is the number required, T means the no.of test required
-    printf("Enter the number of test cases(T):\n");
     scanf("%d",&T);
+    int result[T];
     for(int i=1;i<=T;i++)
    {
     printf("Enter the number(N):\n");
@@ -20,12 +20,19 @@ int main()
     {
         q=N%10;
         N/=10;
+        if(q!=0)
+        {
         if(num%q==0)
         {
            divi_posi++;
         }
+        }
      }
-     printf("Total number of positions in %d which divides %d :%d\n",num,num,divi_posi); 
+     result[i-1]=divi_pos; 
      divi_posi=0;
      } 
+    for(int i=0;i<T;i++)
+     {
+         printf("%d\n", result[i]);
+     }     
 }         
