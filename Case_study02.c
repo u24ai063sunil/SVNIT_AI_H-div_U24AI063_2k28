@@ -13,14 +13,12 @@
 int main()
 {
     int N,M,a,b,k,sum=0; //a =starting index ,b=ending index ,k=no.of candies in boxes of indices from a to b
-    printf("Enter the value of total no.of boxes(N) and total number of operations (M):\n");
     scanf("%d %d",&N,&M);
     for(int i=1;i<=M;i++)
     {
-         printf("Enter the value of a,b & k for %d operation:\n",i);
          scanf("%d %d %d",&a,&b,&k);
          sum+=k*(b-a+1);
     }
-    printf("The average value of candies :%d",sum/N);
+    printf("%d",sum/N);
     return 0;     
 }
