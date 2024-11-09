@@ -10,7 +10,7 @@ int main()
 {
     int T,q,divi_posi=0;//N is the number required, T means the no.of test required
     scanf("%d",&T);
-    long long N;p
+    long long N;
     int result[T];
     for(int i=1;i<=T;i++)
    {
