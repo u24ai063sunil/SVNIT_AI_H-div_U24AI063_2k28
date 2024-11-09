@@ -13,7 +13,6 @@ int main()
     int result[T];
     for(int i=1;i<=T;i++)
    {
-    printf("Enter the number(N):\n");
     scanf("%d",&N);
     num=N;
     while(N!=0)
