@@ -8,12 +8,13 @@
 #include <stdio.h>
 int main()
 {
-    int N,T,num,q,divi_posi=0;//N is the number required, T means the no.of test required
+    int T,q,divi_posi=0;//N is the number required, T means the no.of test required
     scanf("%d",&T);
+    long long N;p
     int result[T];
     for(int i=1;i<=T;i++)
    {
-    scanf("%d",&N);
+    scanf("%lld",&N);
     num=N;
     while(N!=0)
     {
