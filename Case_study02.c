@@ -12,13 +12,13 @@
 #include <stdio.h>
 int main()
 {
-    int N,M,a,b,k,sum=0; //a =starting index ,b=ending index ,k=no.of candies in boxes of indices from a to b
-    scanf("%d %d",&N,&M);
+    long long  N,M,a,b,k,sum=0; //a =starting index ,b=ending index ,k=no.of candies in boxes of indices from a to b
+    scanf("%lld %lld",&N,&M);
     for(int i=1;i<=M;i++)
     {
-         scanf("%d %d %d",&a,&b,&k);
+         scanf("%lld %lld %lld",&a,&b,&k);
          sum+=k*(b-a+1);
     }
-    printf("%d",sum/N);
+    printf("%lld",sum/N);
     return 0;     
 }
