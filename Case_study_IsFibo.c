@@ -25,10 +25,10 @@ void fibo(int N,int t)
     int a=0,b=1,i=1;
     while(fibo_series[i]<=N)
     {
+        i++;
         fibo_series[i]=a+b;
         a=b;
         b=fibo_series[i];
-        i++;
     }
     long long j=0;
     int flag=0;
