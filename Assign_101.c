@@ -1,14 +1,12 @@
-/*
-101. WRITE A C PROGRAM TO ADD /APPEND INFORMATION TO THE FILE “LNMIITSTUDENT.DAT”.
-*/
-
+// WRITE A C PROGRAM TO ADD /APPEND INFORMATION TO THE FILE “LNMIITSTUDENT.DAT”.
 #include <stdio.h>
 #include <string.h>
 
 int main() 
 {
     FILE *ptr = fopen("LNMIITSTUDENT.DAT", "a");
-    if (ptr == NULL) {
+    if (ptr == NULL) 
+    {
         printf("Error opening file for appending.\n");
         return 1;
     }
@@ -17,7 +15,8 @@ int main()
     printf("How many students' details to append? \n");
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+        {
         printf("\nEnter details of Student %d\n", i + 1);
 
         int roll, marks;
