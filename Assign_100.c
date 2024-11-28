@@ -56,7 +56,8 @@ int main()
     printf("\nStudent details read from the file:\n");
     int roll, marks;
     char name[50];
-    while (fscanf(ptr, "%d %[^\n]%d", &roll, name, &marks) == 3) {
+    while (fscanf(ptr, "%d %s %d", &roll, name, &marks) == 3) 
+    {
         printf("Roll Number: %d\n", roll);
         printf("Name: %s\n", name);
         printf("Marks: %d\n", marks);
