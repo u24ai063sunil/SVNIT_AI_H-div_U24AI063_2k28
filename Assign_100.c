@@ -1,8 +1,6 @@
-/*
-100. A FILE CALLED “LNMIITSTUDENT.JAVA” CONTAINS INFORMATION SUCH AS STUDENT ROLL 
-NUMBER, NAME AND TOTAL MARKS. WRITE A C PROGRAM TO CREATE A FILE TO STORE DETAILS OF N 
-STUDENTS.
-*/
+// A FILE CALLED “LNMIITSTUDENT.JAVA” CONTAINS INFORMATION SUCH AS STUDENT ROLL 
+//NUMBER, NAME AND TOTAL MARKS. WRITE A C PROGRAM TO CREATE A FILE TO STORE DETAILS OF N 
+//STUDENTS.
 
 #include <stdio.h>
 #include <string.h>
@@ -10,7 +8,8 @@ STUDENTS.
 int main() 
 {
     FILE *ptr = fopen("LNMIITSTUDENT.JAVA", "w");
-    if (ptr == NULL) {
+    if (ptr == NULL) 
+    {
         printf("Error opening file for writing.\n");
         return 1;
     }
@@ -19,7 +18,8 @@ int main()
     printf("How many students' details to input? \n");
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         printf("\nEnter details of Student %d\n", i + 1);
 
         int roll, marks;
@@ -33,7 +33,8 @@ int main()
         fgets(name, sizeof(name), stdin);
 
         size_t len = strlen(name);
-        if (len > 0 && name[len - 1] == '\n') {
+        if (len > 0 && name[len - 1] == '\n') 
+        {
             name[len - 1] = '\0';
         }
 
@@ -46,7 +47,8 @@ int main()
     fclose(ptr);
 
     ptr = fopen("LNMIITSTUDENT.JAVA", "r");
-    if (ptr == NULL) {
+    if (ptr == NULL) 
+    {
         printf("Error opening file for reading.\n");
         return 1;
     }
