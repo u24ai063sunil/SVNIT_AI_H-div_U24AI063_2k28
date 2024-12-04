@@ -16,13 +16,11 @@ int main()
     {
         printf("%s\t",rock[i]);
     }
-    for(int i=0;i<1;i++)
-    {
-        for(int j=0;j<strlen(rock[i]);j++)
+      for(int j=0;j<strlen(rock[0]);j++)
         {
             int count=0;
             int a;
-            a=rock[i][j];
+            a=rock[0][j];
             for(int x=1;x<n;x++)
             {
                
@@ -44,7 +42,7 @@ int main()
 
 
         }
-    }
+    
     printf("number of gem elemnets are %d",gem);
     return 0;
 
